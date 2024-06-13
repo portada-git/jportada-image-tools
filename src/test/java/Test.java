@@ -9,10 +9,10 @@ public class Test {
     
     public static void main(String[] args){
         FixBackTransparencyTool prg = new FixBackTransparencyTool();
-        prg.setImagePath("data/imatgeTransparencia.jpg");
+        prg.setImagePath("data/inclinada.jpg");
         prg.fixTransparency();
-        prg.saveImage("data/iamtgeTransparenciaF1.jpg");
-        FixBackTransparencyTool.fixTransparencyFromFile("data/imatgeNormal.jpg", "data/imatgeNormalF1.jpg");
+        prg.saveImage("data/inclinadaF1.jpg");
+        FixBackTransparencyTool.fixTransparencyFromFile("data/imatgeTransparencia.jpg", "data/imatgeTransparenciaF1.jpg");
     }
     
 }

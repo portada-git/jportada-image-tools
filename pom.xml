@@ -2,18 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.elsquatrecaps.portada.portadaimagetools</groupId>
-    <artifactId>PortadaImageTools</artifactId>
+    <artifactId>jportada-image-tools</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>org.openpnp</groupId>
             <artifactId>opencv</artifactId>
             <version>4.9.0-0</version>
-        </dependency>
-        <dependency>
-            <groupId>nu.pattern</groupId>
-            <artifactId>opencv</artifactId>
-            <version>2.4.9-7</version>
         </dependency>
     </dependencies>
     <build>
@@ -38,6 +33,15 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <repositoryId>portada</repositoryId>
+                    <url>https://maven.pkg.github.com/portada-git/jportada_image_tools</url>
+                </configuration>
+            </plugin>                                    
         </plugins>
     </build>
     <properties>
@@ -47,4 +51,11 @@
         <exec.mainClass>org.elsquatrecaps.portada.portadaimagetools.PortadaImageTools</exec.mainClass>
     </properties>
     <name>PortadaImageTools</name>
+    <distributionManagement>
+        <repository>
+            <id>portada-jimagetools</id>
+            <name>GitHub portada-git Apache Maven Packages for PortADa project</name>
+            <url>https://maven.pkg.github.com/portada-git/jportada_image_tools</url>
+        </repository>
+    </distributionManagement>
 </project>
