@@ -39,7 +39,7 @@
                 <version>3.1.2</version>
                 <configuration>
                     <repositoryId>portada</repositoryId>
-                    <url>https://maven.pkg.github.com/portada-git/jportada_image_tools</url>
+                    <url>https://maven.pkg.github.com/portada-git/jportada-image-tools</url>
                 </configuration>
             </plugin>                                    
         </plugins>
@@ -55,7 +55,7 @@
         <repository>
             <id>portada-jimagetools</id>
             <name>GitHub portada-git Apache Maven Packages for PortADa project</name>
-            <url>https://maven.pkg.github.com/portada-git/jportada_image_tools</url>
+            <url>https://maven.pkg.github.com/portada-git/jportada-image-tools</url>
         </repository>
     </distributionManagement>
 </project>
